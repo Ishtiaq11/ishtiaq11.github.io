@@ -1,79 +1,144 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <title>Ishtiaq Ahmed | Software Engineer</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Ishtiaq Ahmed - Senior Software Engineer specializing in Python, Django, and scalable backend systems" />
+    <title>Ishtiaq Ahmed | Software Engineer</title>
     <link rel="stylesheet" href="assets/css/main.css" />
-    <!-- Adding a professional font like Inter or Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Ishtiaq Ahmed</a>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <!-- Main Wrapper -->
-    <div id="main-container">
-        
-        <!-- Hero Section -->
-        <header id="hero">
-            <img src="images/pp.jpg" alt="Ishtiaq Ahmed" class="avatar" />
-            <h1>Ishtiaq Ahmed</h1>
-            <p class="subtitle">Software Engineer • Python & Django Specialist</p>
-            <div class="social-links">
-                <a href="https://github.com/ishtiaq11">GitHub</a>
-                <a href="https://www.facebook.com/ishtiaqpias">Facebook</a>
-                <a href="mailto:ishtiaqpias@gmail.com">Email</a>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Ishtiaq Ahmed</h1>
+            <p class="hero-subtitle">Senior Software Engineer</p>
+            <p class="hero-description">Building scalable backend systems and high-performance APIs with Python & Django</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
             </div>
-        </header>
+        </div>
+    </section>
 
-        <hr />
-
-        <!-- About Section -->
-        <section id="about">
-            <h2>About</h2>
-            <p>
-                I build scalable backend systems and high-performance APIs. With a focus on <strong>Python</strong> and <strong>Django</strong>, 
-                I specialize in optimizing database performance and architecting microservices. I believe in clean code, 
-                comprehensive testing, and software that solves real-world problems at scale.
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <p class="section-text">
+                I'm a Senior Software Engineer with a passion for building scalable systems and elegant solutions. 
+                With deep expertise in <strong>Python</strong>, <strong>Django</strong>, and modern backend architecture, 
+                I specialize in designing microservices, optimizing database performance, and creating robust APIs 
+                that power production applications at scale.
             </p>
-        </section>
+            <p class="section-text">
+                I believe in clean code, comprehensive testing, and solving real-world problems through thoughtful design. 
+                When I'm not coding, I'm exploring new technologies and best practices to stay ahead in the ever-evolving 
+                landscape of software engineering.
+            </p>
+        </div>
+    </section>
 
-        <!-- Skills Section: Grid Layout -->
-        <section id="skills">
-            <h2>Core Stack</h2>
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Core Stack</h2>
             <div class="skills-grid">
-                <span>Python / Asyncio</span>
-                <span>Django / DRF</span>
-                <span>PostgreSQL / SQL</span>
-                <span>Redis / Celery</span>
-                <span>Docker / Linux</span>
-                <span>Microservices</span>
-                <span>Odoo / ERP</span>
+                <div class="skill-tag">Python</div>
+                <div class="skill-tag">Django</div>
+                <div class="skill-tag">Django REST Framework</div>
+                <div class="skill-tag">PostgreSQL</div>
+                <div class="skill-tag">Redis</div>
+                <div class="skill-tag">Celery</div>
+                <div class="skill-tag">Docker</div>
+                <div class="skill-tag">Asyncio</div>
+                <div class="skill-tag">Microservices</div>
+                <div class="skill-tag">API Design</div>
+                <div class="skill-tag">System Design</div>
+                <div class="skill-tag">Linux</div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Featured Projects</h2>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
             
-            <div class="project-card">
-                <h3>Msms: SMS Marketing App</h3>
-                <p class="tech-stack">Django, PostgreSQL, Celery, Redis</p>
-                <p>A bulk messaging platform capable of handling millions of customer notifications via SMS/MMS.</p>
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Msms: SMS Marketing Platform</h3>
+                        <p class="project-tech">Django • PostgreSQL • Celery • Redis</p>
+                    </div>
+                    <p class="project-description">
+                        A bulk messaging platform capable of handling millions of customer notifications via SMS/MMS. 
+                        Designed with high concurrency and reliability, featuring async task processing and real-time 
+                        delivery tracking.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Email Address Verifier</h3>
+                        <p class="project-tech">Python • Celery • Redis • Async</p>
+                    </div>
+                    <p class="project-description">
+                        High-concurrency tool to verify email addresses in bulk lists. Implements intelligent validation 
+                        with parallel processing, caching, and result aggregation for enterprise-scale verification.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Odoo ERP Customization</h3>
+                        <p class="project-tech">Odoo • Python • PostgreSQL</p>
+                    </div>
+                    <p class="project-description">
+                        Enterprise resource planning system optimization and customization. Built custom modules, 
+                        integrated third-party APIs, and optimized workflows for complex business processes.
+                    </p>
+                </article>
             </div>
+        </div>
+    </section>
 
-            <div class="project-card">
-                <h3>Email Address Verifier</h3>
-                <p class="tech-stack">Python, Celery, Redis</p>
-                <p>High-concurrency tool to verify the existence of email addresses in bulk lists.</p>
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-text text-center">
+                I'm always interested in discussing new projects, opportunities, and ideas.
+            </p>
+            <div class="contact-links">
+                <a href="https://github.com/ishtiaq11" class="contact-link" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/ishtiaq-ahmed-b98617111/" class="contact-link" target="_blank">LinkedIn</a>
+                <a href="mailto:ishtiaqpias@gmail.com" class="contact-link">Email</a>
+                <a href="https://www.facebook.com/ishtiaqpias" class="contact-link" target="_blank">Facebook</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2026 Ishtiaq Ahmed. Built with simplicity.</p>
-        </footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Ishtiaq Ahmed. Crafted with simplicity and care.</p>
+        </div>
+    </footer>
 
-    </div>
-
+    <script src="assets/js/smooth-scroll.js"></script>
 </body>
 </html>
